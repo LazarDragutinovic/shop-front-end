@@ -1,0 +1,32 @@
+@import "./button.scss";
+@import "../queries/queries.scss";
+
+%sp-form {
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 450px;
+
+  input {
+    width: 97%;
+    padding: 0.2em;
+
+    font-size: 1.8rem;
+    margin-bottom: 2.5em;
+  }
+
+  button {
+    @extend %sp-button;
+    width: 97%;
+  }
+
+  @include tablet {
+    box-shadow: var(--box-shadow-default);
+  }
+}

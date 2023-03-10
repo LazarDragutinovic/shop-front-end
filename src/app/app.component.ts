@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { themeClassModifierSelector } from './shared/theme/store/theme.selectors';
+import { AppStateInterface } from './shared/types/appState.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sport-shop';
+
+
+
+  themeClassModifier$ = this.store.select(themeClassModifierSelector)
+
+  constructor(private store: Store<AppStateInterface>) {
+
+  }
+
 }

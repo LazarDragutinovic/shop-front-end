@@ -1,0 +1,30 @@
+
+
+
+.theme-button {
+  font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
+  width: 3em;
+  height: 1.3em;
+  border-radius: 0.7rem;
+  background-color: var(--navbar-theme-button-bg);
+  padding: 0.1em;
+  position: relative;
+  &__circle {
+
+    display: block;
+
+    position: absolute;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    background-color: var(--navbar-theme-button-circle);
+    top: 0.1em;
+
+
+    &--active {
+      transform: translateX(3em - 1.1em - 0.2em);
+    }
+  }
+}
+
+

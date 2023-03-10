@@ -1,0 +1,31 @@
+
+
+.app-root {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.app-root--light {
+  --bg-color: rgb(255,255,255);
+  --bg-color-1: rgb(55, 226, 84);
+  --text-color: gray;
+  --navbar-link-color: rgb(255, 252, 252);
+  --navbar-link-bg: rgb(0, 170, 28);
+  --button-default-bg: rgb(0, 136, 255);
+  --box-shadow-default: 0 2px 4px rgb(73, 119, 114);
+  --navbar-theme-button-bg: rgb(199, 194, 194);
+  --navbar-theme-button-circle: rgb(234, 255, 5);
+}
+
+.app-root--dark {
+  --bg-color: rgb(14, 14, 14);
+  --bg-color-1: rgb(29, 11, 29);
+  --text-color: rgb(124, 120, 120);
+  --navbar-link-color: rgb(255, 252, 252);
+  --navbar-link-bg: rgb(55, 18, 55);
+  --button-default-bg: rgb(255, 0, 225);
+  --box-shadow-default: 0 2px 4px rgb(255, 228, 26);
+  --navbar-theme-button-bg: rgb(76, 10, 52);
+  --navbar-theme-button-circle: rgb(143, 143, 138);
+}

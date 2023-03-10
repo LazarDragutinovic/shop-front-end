@@ -1,0 +1,13 @@
+@import "../../../shared/scss/defaults/form.scss";
+
+
+.register {
+
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  &__form {
+    @extend %sp-form;
+  }
+}

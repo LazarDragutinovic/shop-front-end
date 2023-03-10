@@ -1,0 +1,17 @@
+
+
+.navbar-link {
+  text-decoration: none;
+
+  font-size: clamp(1.3rem, 1.3rem + 1vw ,2rem);
+
+  margin: 0.5em;
+  padding: 0.25em;
+  border-radius: 0.1em;
+
+
+  color: var(--navbar-link-color);
+  &:hover {
+    background-color: var(--navbar-link-bg);
+  }
+}
